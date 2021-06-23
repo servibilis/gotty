@@ -17,3 +17,18 @@
     user-select: none;
     transition: opacity 180ms ease-in;
 }
+
+.terminal .xterm-viewport::-webkit-scrollbar {
+    width: 5px;
+    z-index: 10000;
+    position: relative;
+}
+
+.terminal .xterm-viewport::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.terminal .xterm-viewport::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
