@@ -86,7 +86,10 @@ export class WebTTY {
                 };
 
                 this.term.onResize(resizeHandler);
-                resizeHandler(termInfo.columns, termInfo.rows);
+                setTimeout(() =>{
+                    resizeHandler(termInfo.columns, termInfo.rows)
+                  }
+                );
 
                 this.term.onInput(
                     (input: string) => {
